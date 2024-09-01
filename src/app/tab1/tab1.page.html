@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Proyecto 01
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Login</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+ 
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Login</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content> 
+      <ion-list>
+        <ion-item>
+          <ion-input [(ngModel)]="email" label="Email" type="email" placeholder="email@domain.com" helperText="Enter a valid email" errorText="Invalid email" autocomplete="email" ngModel email></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input [(ngModel)]="password" label="Password" type="Password"></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-button color="tertiary" style="margin-left: 30px; width: 100px;" (click)="checkLogin()">Login</ion-button>
+      <ion-button color="tertiary" style="margin-left: 25%; width: 100px;" routerLink="../tab2">Register</ion-button>
+
+    </ion-card-content>
+  </ion-card>
+  
+  
+
+  
+</ion-content>
+
+
